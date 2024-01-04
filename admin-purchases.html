@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>users purchases</title>
+    <link rel="stylesheet" href="styles/admin-purchases.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div >
+        <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div>
+        <img class="profile" src="images/profile.png">
+      </div>
+      <div class="options">
+        <img class="user_icon" src="images/ph_users.png"> <a href="admin-users.html"> Users</a></div>
+      <div class="current_page">
+        <img class="icon" src="images/cart_yellow.png">
+        Purchases
+      </div>
+      <div class="options"><a href="admin-payment.html">
+        <img class="icon" src="images/payments.png">
+        Bill/Payment Status
+      </a></div>
+      <div class="options"><a href="admin-purchases.html">
+        <img class="icon" src="images/notification.png">
+        Notificaton
+      </a></div>
+      <div class="options"><a href="logout.html">
+        <img class="icon" src="images/log out.png">
+        Log Out
+      </a></div>
+    </div>
+    <div class="header">
+      <div class="orders"><h1 style="font-size: 30px;">Orders</h1></div>
+      <div class="input-group">
+        <input type="search" placeholder="Search here...">
+      </div>
+      <div class="home-nav">
+        <a href="homepage.html">
+          <img  class="home" src="images/home_icon.png">
+        </a>
+      </div>
+    </div>
+
+    <div class="body">
+      
+      <main class="table">
+        <section class="table__header">
+            
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/profile.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/profile.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/profile.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/profile.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Customer</th>
+                        <th> Email </th>
+                        <th> Products </th>
+                        <th> Total </th>
+                        <th> Status </th>
+                        <th> Date </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1111 </td>
+                        <td>John Doe</td>
+                        <td> John@mail </td>
+                        <td> 2 </td>
+                        <td> <strong> ₹12000.90 </strong></td>
+                        <td>
+                            <p >Completed</p>
+                        </td>
+                        <td> Aug 1, 2023 </td>
+                        
+                    </tr>
+                    <tr>
+                        <td> 1112 </td>
+                        <td>Prakash </td>
+                        <td>Prakash@mail </td>
+                        <td>2</td>
+                        <td> <strong>₹5350.50</strong> </td>
+                        <td>
+                            <p >Cancelled</p>
+                        </td>
+                       
+                        <td> 27 Aug, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Pradeep </td>
+                      <td>Pradeep@mail </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p >Cancelled</p>
+                      </td>
+                     
+                      <td> Jul 24, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>ravi </td>
+                      <td>ravi@mail </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p>Cancelled</p>
+                      </td>
+                     
+                      <td> Jul 24, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Pradeep </td>
+                      <td>Pradeep@mail </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p >Pending</p>
+                      </td>
+                     
+                      <td> Jul 24, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Meenakshi  </td>
+                      <td>Meenakshi @mail </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p>Cancelled</p>
+                      </td>
+                     
+                      <td> Jul 24, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Sasi kumar  </td>
+                      <td>______ </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p >Completed</p>
+                      </td>
+                     
+                      <td> Jul 20, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Aravindhan </td>
+                      <td>Aravindhan@mail </td>
+                      <td>1</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p>Completed</p>
+                      </td>
+                     
+                      <td> Jul 1, 2023 </td>
+                    </tr>
+                    <tr>
+                      <td> 111 </td>
+                      <td>Pradeep </td>
+                      <td>______ </td>
+                      <td>2</td>
+                      <td> <strong>₹ 20,000</strong> </td>
+                      <td>
+                          <p class="status completed">Completed</p>
+                      </td>
+                     
+                      <td> Jul 24, 2023 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    </div>  
+  </body>
+</html>

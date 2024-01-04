@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      login page
+    </title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script>
+      function validateAndRedirect() {
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var modalContent = document.querySelector('.modal-content');
+
+        // Check if the mobile number is empty
+        if (mobileNumber.trim() === "") {
+          modalContent.textContent = "Please enter your mobile number to sign in.";
+        } else {
+          modalContent.textContent = ""; // Clear the content if the number is entered
+          // Redirect to the profile page
+          window.location.href = "my-profile.html";
+        }
+      }
+    </script>
+  </head>
+  <body style="background: url(images/home.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a >Home</a>
+        <a>Products</a>
+        <a>Services</a>
+        <a>Contact Us</a>
+        <a>Admin Access</a>
+        <a>Login/SignUp</a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="heading">
+        <p class="coops"> <span class="red-font">From  Coops to Connectivity</span>Empowering Poultry Farmers with our IOT Solution MyFlock-iRooster</p>
+      </div>
+      <div class="desc">
+        <p > iRooster is an intelligent IoT device aiding Poultry Flock Management with the
+          industry’s best precision poultry management practices.iRooster is precise
+          and efficient to optimize your poultry farms.</p>
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="login">
+        <div><a class="close-button-d" href="homepage.html">X</a></div>
+        <div>
+          <img class="mini-logo" src="images/myflocklogo.png">
+        </div>
+        <h1>Login </h1>
+        <p class="modal-content">
+           
+        </p>
+        <div>
+          <input type="tel" required placeholder="Mobile Number :" class="number-input" id="mobileNumber">
+        </div>
+        
+          <button class="login-button" onclick="validateAndRedirect()" >Login
+          </button>
+        
+        <p class="alt-option">New to My Flock ?<a class="register" href="signup.html">Register</a></p>
+      </div>
+    </div>
+  
+    
+      
+    
+  </body>
+</html>

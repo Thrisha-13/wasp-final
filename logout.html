@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      .overlay {
+        background-color: rgba(118, 114, 114, 0.76);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loginout {
+        background-color: white;
+        width: 300px;
+        max-width: fit-content;
+        padding: 10px;
+        border-radius: 5px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+      }
+      .image{
+        width: 100px;
+      }
+      h1{
+        font-size:30px ;
+        font-weight: 100;
+        margin: 5px;
+      }
+      button{
+        border-radius: 5px;
+      }
+      .buttons{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+      }
+      .yesButton{
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 20px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .cancelButton{
+        border: none;
+        padding: 5px 20px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    </style>
+    <link>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="loginout">
+
+        <div>
+          <img class="image" src="images/alert-icon.png">
+        </div>
+        <h1>Are you leaving ? </h1>
+        <p class="content">Are you sure want to log out ? All your unsaved data will be lost 
+        </p>
+        <p class="buttons">
+          <button class="cancelButton" onclick="goBack()">Cancel</button>
+          <button class="yesButton" onclick="redirectToHomepage()">Yes</button>
+        </p>
+        
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        
+        window.history.back();
+      }
+
+      function cancel() {
+        
+      }
+
+      function redirectToHomepage() {
+   
+        window.location.href = 'homepage.html';
+      }
+    </script>
+  </body>
+</html>

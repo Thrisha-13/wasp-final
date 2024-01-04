@@ -1,0 +1,79 @@
+<!DOCTYPE html>left-side-content
+<html>
+  <head>
+    <title>
+      my profile
+    </title>
+    <link rel="stylesheet" href="styles/my-profile.css">
+    <script>
+      function toggleEditability() {
+        var inputElements = document.querySelectorAll('.inputElement');
+        for (var i = 0; i < inputElements.length; i++) {
+          inputElements[i].contentEditable = "true";
+        }
+      }
+
+      function saveData() {
+        var inputElements = document.querySelectorAll('.inputElement');
+        for (var i = 0; i < inputElements.length; i++) {
+          inputElements[i].contentEditable = "false";
+        }
+        alert("Data saved!");
+        // You can add logic here to save the entered data to your server or perform other actions.
+      }
+    </script>
+  </head>
+  <body style="background: url(images/bg1.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a href="homepage.html" >Home</a>
+        <a class="currentPage">My profile</a>
+        <a href="process-setup.html">Process Setup</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="profileContent">
+        <div class="left-side-content">
+          <div class="userId" >
+            <img class="profileImage" src="images/profile.png">
+            <div class="userId1">
+              <p style="display: inline-block; font-weight: bold;">FARMER ID</p>
+              <p>@abcde</p>
+            </div>
+          </div>
+          <div class="personal-info">
+            <input type="text" placeholder="Name" class="inputelement">
+            <input type="text" placeholder="Farm Name" class="inputelement">
+            <p>
+              <button class="edit" onclick="toggleEditability()" >Edit</button>
+              <button class="edit" onclick="saveData()" >Save</button>
+            </p>
+              
+            
+          </div>
+        </div>
+        
+        <div class="right-side-content">
+          <div class="contact">
+            <p class="contact-info">Contact information</p>
+            <input type="tel" placeholder="Phone" class="inputElement">
+            <input type="email" placeholder="E-Mail" class="inputElement">
+            <input type="text" placeholder="Address" class="inputElement">
+            <input type="number" maxlength="6" placeholder="Pincode" class="inputElement">
+            <p class="contact-info">Tax information</p>
+            <input type="number" placeholder="Tax Number" class="inputElement">   
+          </div>  
+        </div>
+        
+        
+       
+      </div>
+    </div>
+    
+  </body>
+</html>

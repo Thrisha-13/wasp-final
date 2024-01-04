@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Process setup
+    </title>
+    <link rel="stylesheet" href="styles/process-setup.css" >
+    <script>
+      function updateData() {
+        // Get values from the input fields
+        var natureOfBusiness = document.getElementById("business").value;
+        var lineOfBusiness = document.getElementById("cars").value;
+        var itemDefault = document.querySelector('input[name="itemTypeDefault"]').checked;
+        var itemCustom = document.querySelector('input[name="itemTypeCustom"]').checked;
+        var farmTypeIndividual = document.querySelector('input[name="farmTypeIndividual"]').checked;
+        var farmTypeCompany = document.querySelector('input[name="farmTypeCompany"]').checked;
+        var configurationSetup = document.getElementById("configurationSetup").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var address = document.getElementById("address").value;
+        var taxNo = document.getElementById("taxNo").value;
+
+        // Perform actions with the data (e.g., send to server, store in database)
+        console.log("Nature of Business:", natureOfBusiness);
+        console.log("Line of Business:", lineOfBusiness);
+        console.log("Item Type - Default:", itemDefault);
+        console.log("Item Type - Custom:", itemCustom);
+        console.log("Farm Type - Individual:", farmTypeIndividual);
+        console.log("Farm Type - Company:", farmTypeCompany);
+        console.log("Configuration Setup:", configurationSetup);
+        console.log("Email:", email);
+        console.log("Phone:", phone);
+        console.log("Address:", address);
+        console.log("Tax No:", taxNo);
+
+        // You can add logic here to send the data to your server or perform other actions.
+      }
+    </script>
+  </head>
+  <body style="background: url(images/bg1.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a href="homepage.html" >Home</a>
+        <a href="my-profile.html" >My profile</a>
+        <a class="currentPage" href="process-setup.html">Process Setup</a>
+        <a href="dashboard.html">Dashboard</a> 
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="profileContent">
+        <div class="head"><h1>Batch Registration</h1></div>
+          
+          <div class="batchData">
+            <label for="business" class="label" >  Nature of business:</label>
+            <select class="text-box"  name="business" id="business">
+              <option value="Poultry">Poultry</option>
+              <option value="Aqua">Aqua</option>
+              <option value="Livestock">Livestock</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Insects">Insects</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div class="batchData">
+            <label for="cars" class="label" >  Line of business   :</label>
+            <select class="text-box"  name="cars" id="cars" >
+              <option value="Laying">Laying</option>
+              <option value="Boling">Boling</option>
+              <option value="Commercial bolier">Commercial bolier</option>
+              <option value="Slaughter">Slaughter</option>
+              <option value="Feed">Feed</option></select>
+            </div>
+          <div class="batchData">
+            <label class="label">Item type :</label>
+            <label class="options">DEFAULT</label>
+            <input type="checkbox"  name="itemTypeDefault">
+            <label class="options">CUSTOM</label>
+            <input type="checkbox" name="itemTypeCustom">
+          </div>
+      <div class="batchData">
+        <label class="label" >Farm type :</label>
+        <label class="options" >INDIVIDUAL</label>
+        <input type="checkbox" name="farmTypeIndividual">
+        <label class="options">COMPANY</label>
+        <input type="checkbox" name="farmTypeCompany">
+      </div>
+      <div class="batchData">
+        <label class="label" >Configuration Setup :</label>
+        <input type="text" class="input-box" id="configurationSetup"  placeholder="Enter name">
+      </div>
+      <div class="batchData1">
+        <input type="email" class="input-box" id="email" placeholder="Enter E-Mail id">
+      </div>
+      <div class="batchData1">
+        <input type="tel" class="input-box" id="phone" placeholder="Enter phone No">
+      </div>
+      <div class="batchData1">
+        <input type="text" class="input-box"  id="address"  placeholder="Enter Address">
+      </div>
+      <div class="batchData1" >
+        <input type="tel" class="input-box"  id="taxNo" placeholder="Enter Tax No">
+      </div>
+      <button class="update-button" onclick="updateData()">Update
+      </button>
+    </div>
+      
+  
+    
+      
+    
+  </body>
+</html>

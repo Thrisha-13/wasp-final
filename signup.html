@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      home page
+    </title>
+    <link rel="stylesheet" href="styles/signup.css">
+  </head>
+  <body style="background: url(images/home.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a>Home</a>
+        <a>Products</a>
+        <a>Services</a>
+        <a>Contact Us</a>
+        <a href="admin-access.html">Admin Access</a>
+        <a href="login.html">Login/SignUp</a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="heading">
+        <p class="coops"> <span class="red-font">From  Coops to Connectivity</span><span style="color: rgb(39, 34, 34);" >|</span> Empowering Poultry Farmers with our IOT Solution MyFlock-iRooster</p>
+      </div>
+      <div class="desc">
+        <p > iRooster is an intelligent IoT device aiding Poultry Flock Management with the
+          industry’s best precision poultry management practices.iRooster is precise
+          and efficient to optimize your poultry farms.</p>
+      </div>
+    </div>
+    
+    <div class="overlay">
+      <div class="login">
+        <div class="login-body">
+          <div>
+            <img class="mini-logo" src="images/myflocklogo.png">
+            <div ><a class="close-button-d" href="homepage.html">X</a></div>
+          </div>
+          <div class="inputs">
+            <label>Full Name <label>
+            <input type="text"id="fullName" class="text-box" placeholder="Name">
+            <label>Email <label>
+            <input type="text" id="email" class="text-box" placeholder="Email">
+            <label>Contact No <label>
+            <input type="text"id="contactNo" class="text-box" placeholder="Phone Number">
+            <button class="login-button"onclick="register()">Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function register() {
+        var fullName = document.getElementById('fullName').value;
+        var email = document.getElementById('email').value;
+        var contactNo = document.getElementById('contactNo').value;
+  
+        // Check if input fields are not empty
+        if (fullName.trim() !== '' && email.trim() !== '' && contactNo.trim() !== '') {
+          // Redirect to my-profile.html
+          window.location.href = 'my-profile.html';
+        } else {
+          alert('Please fill in all the fields before registering.');
+        }
+      }
+    </script>
+  </body>
+</html>

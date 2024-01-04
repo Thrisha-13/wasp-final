@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/admin-access.css">
+    <title>
+      admin access page
+    </title>
+    <script>
+      function validateAndRedirect() {
+        var adminName = document.getElementById("adminName").value;
+        var password = document.getElementById("password").value;
+        var modalContent = document.querySelector('.modal-content');
+
+        // Check if either admin name or password is empty
+        if (adminName.trim() === "" || password.trim() === "") {
+          modalContent.textContent = "Please enter both administrator name and password to continue.";
+        } else {
+          modalContent.textContent = ""; // Clear the content if both fields are entered
+          // Redirect to the my-profile.html page
+          window.location.href = "admin-users.html";
+        }
+      }
+    </script>
+
+  </head>
+  <body style="background: url(images/home.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a>Home</a>
+        <a>Products</a>
+        <a>Services</a>
+        <a>Contact Us</a>
+        <a href="admin-access.html">Admin Access</a>
+        <a href="login.html">Login/SignUp</a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="heading">
+        <p class="coops"> <span class="red-font">From  Coops to Connectivity</span><span style="color: rgb(39, 34, 34);" >|</span> Empowering Poultry Farmers with our IOT Solution MyFlock-iRooster</p>
+      </div>
+      <div class="desc">
+        <p > iRooster is an intelligent IoT device aiding Poultry Flock Management with the
+          industry’s best precision poultry management practices.iRooster is precise
+          and efficient to optimize your poultry farms.</p>
+      </div>
+    </div>
+  
+    
+  
+    <div class="overlay">
+      <div class="login">
+        <div ><a class="close-button-d" href="homepage.html">X</a></div>
+          <div>
+            <img class="mini-logo" src="images/myflocklogo.png">
+          </div>
+          <h1>Admin Access </h1>
+          
+          <div >
+            <input type="text" placeholder="Administrator Name " class="number-input" id="adminName" >
+          </div>
+          <div>
+            <input type="password" placeholder="Enter Password " class="number-input" id="password">
+          </div>
+          <p class="modal-content">
+          </p>
+          <button class="login-button"  onclick="validateAndRedirect()">Login
+          </button>
+          <p class="alt-option">Forgot Password ?</p>
+        </div>
+      </div>
+    </div>
+  </body>  
+</html>

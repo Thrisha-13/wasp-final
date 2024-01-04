@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    
+    <title> dashboard
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+       <img class="logo" src="images/myflocklogo.png">
+      </div>
+      <div class="right-section">
+        <a href="homepage.html" >Home</a>
+        <a href="my-profile.html" >My profile</a>
+        <a  href="process-setup.html">Process Setup</a>
+        <a class="currentPage" href="dashboard.html">Dashboard</a> 
+      </div>
+    </div>
+    <!--progress charts-->
+    <div class="progress_charts">
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/temperature.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">25&deg;C</p>
+        <p style="display: block;margin-left: 15px;">Temperature</p>
+      </div>
+      
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/humidity.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">38%</p>
+        <p style="display: block;margin-left: 15px;">Humidity</p>
+      </div>
+
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/carbon dioxide.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">150 ppm</p>
+        <p style="display: block;margin-left: 15px;">Carbon Dioxide</p>
+      </div>
+
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/h2s.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">10 ppm</p>
+        <p style="display: block;margin-left: 15px;">H2S</p>
+      </div>
+
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/ammonia.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">5 ppm</p>
+        <p style="display: block;margin-left: 15px;">Ammonia</p>
+      </div>
+
+      <div class="progress_chart">
+        <img class="progressChartIcon" src="images/methane.png">
+        <div class="skill1">
+          <div class="skill">
+            <div class="outer">
+              <div class="inner"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="80px"> <!-- Adjusted width and height -->
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#FF3333" />
+                  <stop offset="50%" stop-color="#FFFF33" />
+                  <stop offset="100%" stop-color="#33FF33" />
+                </linearGradient>
+              </defs>
+              <circle cx="40" cy="40" r="30" stroke-linecap="round" /> <!-- Adjusted cx, cy, and r attributes -->
+            </svg>
+          </div>
+        </div>
+        <p style="display: block;margin-left: 15px;">2 ppm</p>
+        <p style="display: block;margin-left: 15px;">Methane</p>
+      </div> 
+    </div>
+    <div class="analysis">
+      <div class="left-side-analysis">
+        <div class="analysis-top-section">
+          <div class="temperature-analysis">
+            <h1>Dashboard Analysis</h1>
+            <h2>Temperature</h2>
+            <div class="chart1">
+              <canvas id="myChart" width="140" height="90"></canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="barchart1.js">
+            </script>
+          </div>
+          <div class="mortality-analysis">
+            <div class="count-analysis">
+              <div class="icons">
+                <img class="mortality-icon" src="images/chick.png">
+              </div>
+              <div class="dataCount">
+                <label>Chick Day count : <label>
+                  <p  class="entereddata dayCount"></p>
+              </div>
+            </div>
+            <div class="count-analysis">
+              <div class="icons">
+                <img class="analysis_icon" src="images/chick.png">
+              </div>
+              <div class="dataCount">
+                <label>Chick count : <label>
+                  <p class="entereddata totalCount">50</p>
+              </div>
+            </div>
+            <div class="count-analysis">
+              <div class="icons">
+                <img class="analysis_icon" src="images/feeding_chicks.png">
+              </div>
+              <div class="dataCount">
+                <label>Feed       : <label>
+                  <p class="entereddata feed">50 kg</p>
+              </div>    
+            </div>
+            <div class="count-analysis">
+              <div class="icons">
+                <img class="analysis_icon" src="images/kg.png">
+              </div>
+              <div class="dataCount">
+                <label>Average weight : <label>
+                  <p class="entereddata avgWeight"></p>
+              </div>
+            </div>
+            <div class="count-analysis">
+              <label>Mortality : <label>
+                <button class="calButton add" onclick="incrementValue()">+</button>
+                <p  class="entereddata" id="enteredDataParagraph"></p>
+                <button class="calButton" onclick="decrementValue()">-</button>
+                <br>
+                <button class="editButton" onclick="editData()">Edit</button>
+                <button class="editButton" onclick="saveData()">Set</button>
+            </div>
+            <button class="analysisButton"  onclick="performAnalysis()">Analysis</button>
+          </div>
+  
+        </div>  
+        <div class="batch-data">
+          <div class="batch-info">
+            <div style="width: 100%; justify-content: center;text-align: center;margin-bottom: 25px;">
+              <h1>
+                Batch : 1
+              </h1>
+            </div>
+            <p class="data" id="dayData">Day :</p>
+            <p class="data" id="chickCountData">Chick count :</p>
+            <p class="data"id="averageWeightData">Average weight :</p>
+            <p class="data" id="mortalityData">Mortality :</p>
+          </div>
+          <div class="area-chart">
+            <div class="chickWeightChart">
+              <div id="chart_div" style="width:550px; height: 250px;"></div>
+            </div>
+            <script src="areachart.js"></script> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="chickDayCount">
+        <div class="area-chart-analysis">
+          <h1>Chick Day count</h1>
+          <div class="chart2">
+          <canvas id="barchart" width="120" height="90"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="barchart2.js"></script>
+        <div class="guage-chart">
+          <div class="gauge-wrapper">
+            <div class="gauge four rischio3">
+              <div class="slice-colors">
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+                <div class="st slice-item"></div>
+              </div>
+              <div class="needle"></div>
+              <div class="gauge-center">
+                <div class="label">RISK</div>
+                <div class="number">HIGH</div>
+              </div>    
+            </div>
+          </div>
+          <h1>Mortality Rate</h1>
+        </div>
+      </div>
+        
+      
+    </div>
+    <script>
+      // Load existing data from local storage on page load
+      document.addEventListener('DOMContentLoaded', function () {
+          loadStoredData();
+
+      });
+
+      function incrementValue() {
+          var enteredData = parseInt(document.getElementById('enteredDataParagraph').innerText) || 0;
+          enteredData++;
+          document.getElementById('enteredDataParagraph').innerText = enteredData;
+          updateDayCount();
+ 
+      }
+
+      function decrementValue() {
+          var enteredData = parseInt(document.getElementById('enteredDataParagraph').innerText) || 0;
+          if (enteredData > 0) {
+              enteredData--;
+              document.getElementById('enteredDataParagraph').innerText = enteredData;
+              updateDayCount();
+
+          }
+      }
+
+      function editData() {
+          var enteredData = prompt('Enter new value:');
+          if (enteredData !== null) {
+              enteredData = parseInt(enteredData) || 0;
+              document.getElementById('enteredDataParagraph').innerText = enteredData;
+              updateDayCount();
+          }
+      }
+
+      function saveData() {
+          var enteredData = parseInt(document.getElementById('enteredDataParagraph').innerText) || 0;
+          localStorage.setItem('mortalityData', enteredData);
+          updateDayCount();
+      }
+      function updateDayCount() {
+          var mortalityValue = parseInt(document.getElementById('enteredDataParagraph').innerText) || 0;
+          var totalCount = parseInt(document.querySelector('.totalCount').innerText) || 0;
+          var dayCount = totalCount - mortalityValue;
+          document.querySelector('.dayCount').innerText = dayCount;
+      }
+
+      function loadStoredData() {
+          var storedData = localStorage.getItem('mortalityData');
+          if (storedData !== null) {
+              document.getElementById('enteredDataParagraph').innerText = storedData;
+              updateDayCount();
+          }
+      }
+
+      function performAnalysis() {
+      // Retrieve values from mortality-analysis
+      var dayCount = document.querySelector('.dayCount').innerText;
+      var chickCount = document.querySelector('.totalCount').innerText;
+      var averageWeight = document.querySelector('.avgWeight').innerText;
+      var mortality = document.querySelector('.entereddata').innerText;
+
+      // Display values in batch-info
+      document.getElementById('dayData').innerText = 'Day: ' + dayCount;
+      document.getElementById('chickCountData').innerText = 'Chick count: ' + chickCount;
+      document.getElementById('averageWeightData').innerText = 'Average weight: ' + averageWeight;
+      document.getElementById('mortalityData').innerText = 'Mortality: ' + mortality;
+
+      // Show batch-info
+      document.querySelector('.batch-info').style.display = 'block';
+    }
+  </script>
+
+    
+     
+
+
+    
+  
+    
+     
+  </body>
+</html>
