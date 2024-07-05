@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  margin: 0;
+  background: url(images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+ 
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:15% ;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+.left-section{
+  flex: 1;
+  width: 100px;
+}
+.logo{
+  height: 90px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.currentPage{
+  color: rgba(255, 186, 63, 1);;
+}
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30px;
+  align-items: center;
+}
+a{
+  margin-left: 30px;
+  width: 200px;
+}
+.content {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContent {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+  display: flex;
+  flex-direction: row; /* Updated to row */
+  width: 70%;
+  justify-content: space-between;
+}
+
+.left-side-content,
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.right-side-content{
+  justify-content: flex-end;
+}
+
+.profileImage {
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 30px;
+  display: inline-block;
+}
+.userId1 {
+  vertical-align: top;
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: 30px;
+}
+.personal-info {
+  font-size: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+}
+ .inputElement {
+  border-color: white;
+  border: none;
+  height: 50px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+}
+.inputelement{
+  border-color: white;
+  border: none;
+  height: 50px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+}
+.edit {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  height: 30px;
+  width: 70px;
+  margin: 20px ;
+  border: none;
+}
+.contact-info {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+ 

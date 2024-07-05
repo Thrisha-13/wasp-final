@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@700&family=Poppins:wght@300;400&family=R');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  font-family: 'inter',poppins;
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:15% ;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  z-index: 1000; 
+}
+.left-section{
+  flex: 1;
+  width: 100px;
+}
+.logo{
+  height: 90px;
+}
+a{
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black; 
+  font-size: 25px;
+  margin-left: 30px;
+}
+.currentPage{
+  color: rgba(255, 186, 63, 1);;
+}
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30px;
+  align-items: center;
+}
+a{
+  margin-left: 30px;
+  width: 200px;
+}
+
+/*progress chart */
+.progress_charts{
+  vertical-align: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  padding: 0px 15px;
+  flex-direction: row;
+}
+.progress_chart{
+  background-color: rgba(255, 255, 255, 0.32);
+  height:150px;
+  width: 180px;
+  margin: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: top;
+  justify-content: space-between;
+}
+
+.pc_left_section{
+  display: inline-block;
+}
+.progressChartIcon{
+  width: 45px;
+}
+.skill {
+  margin-left: 80px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.skill1 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer {
+  height: 80px; /* Adjusted height */
+  width: 80px; /* Adjusted width */
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  height: 40px; /* Adjusted height */
+  width: 40px; /* Adjusted width */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-weight: 600px;
+  color: #555;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px; /* Adjusted stroke width */
+  /* level of increment */
+  stroke-dasharray: 100;
+  stroke-dashoffset: 50;
+  animation: anim 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  100% {
+    /* 412-412*0.65 */
+    stroke-dashoffset: 50;
+  }
+}
+/*temperature analysis*/
+.analysis{
+  margin: 10px 10px;
+  align-items:start;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.32);
+  display: flex;
+  flex-direction: row;
+}
+.left-side-analysis,
+.chickDayCount{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+}
+.left-side-analysis{
+  flex: 2;
+  vertical-align: top;
+}
+.analysis-top-section{
+  display: flex;
+  flex-direction: row;
+}
+.temperature-analysis,
+.mortality-analysis{
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  flex: 1; 
+  margin: 10px;
+  max-height: fit-content;
+  width: fit-content;
+}
+h1{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 25px;
+}
+h2{
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+}
+.chart1{
+  display: flex;
+  height: 300px;
+  width: 380px;
+  align-items: center;
+  justify-content: center;
+}
+.count-analysis{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+  padding:5px 10px  ;
+  border-radius: 30px;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.icons{
+  width: 25;
+}
+.dataCount{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  margin-left: 10px;
+  justify-content:center;
+  align-items: center;
+}
+.calButton{
+  padding: 0cqmin 5px;
+}
+.add{
+  margin-left: 30px;
+}
+.entereddata,
+input{
+  border: none;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
+  padding: 2px 10px;
+  width: 150px;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.editButton{
+  padding: 6px 10px;
+ margin-top: 15px;
+ border: none;
+ box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+ background-color: white;
+ margin-left: 100px;
+ border-radius: 20px;
+}
+
+.analysisButton{
+  vertical-align: bottom;
+  height: 30px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F92626;
+  color: white;
+}
+.batch-data{
+  display: flex;
+  flex-direction: row;
+}
+.area-chart,
+.batch-info{
+  justify-content:center;
+  align-items: center;
+  text-align:left;
+  padding: 20px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  flex: 1; 
+  margin: 10px;
+  width: fit-content;
+  width: fit-content;
+}
+.data{
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.chickDayCount{
+  flex: 1;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.chart2{
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  height: 300px;
+  width: 400px;
+}
+
+
+/*speedometer*/
+.guage-chart{
+  margin: 50px 0px;
+}
+.gauge-wrapper {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px 15px 15px;
+}
+
+.gauge {
+  background: #e7e7e7;
+  box-shadow: 0 -3px 6px 2px rgba(0, 0, 0, 0.50);
+  width: 400px;
+  height: 200px;
+  border-radius: 200px 200px 0 0!important;
+  position: relative;
+  overflow: hidden;
+}
+.gauge.min-scaled {
+  transform: scale(0.5);
+}
+
+.gauge-center {
+  content: '';
+  color: black;
+  width: 60%;
+  height: 60%;
+  background: white;
+  border-radius: 200px 200px 0 0!important;
+  position: absolute;
+  box-shadow: 0 -13px 15px -10px rgba(0, 0, 0, 0.28);
+  right: 21%;
+  bottom: 0;
+  color: black;
+  z-index:10;
+}
+
+.gauge-center .label, .gauge-center .number {display:block; width: 100%; text-align: center; border:0!important;}
+.gauge-center .label {font-size:0.75em; opacity:0.6; margin:1.1em 0 0.3em 0;}
+.gauge-center .number {font-size:1.2em;}
+
+.needle {
+  width: 150px;
+  height: 7px;
+  background: #15222E;
+  border-bottom-left-radius: 100%!important;
+  border-bottom-right-radius: 5px!important;
+  border-top-left-radius: 100%!important;
+  border-top-right-radius: 5px!important;
+  position: absolute;
+  bottom: -2px;
+  left: 60px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.38);
+  display:none;
+  z-index:9;
+}
+
+.four.rischio1 .needle {animation: fourspeed1 2s 1 both; animation-delay: 1s; display:block;}
+.four.rischio2 .needle {animation: fourspeed2 2s 1 both; animation-delay: 1s; display:block;}
+.four.rischio3 .needle {animation: fourspeed3 2s 1 both; animation-delay: 1s; display:block;}
+.four.rischio4 .needle {animation: fourspeed4 2s 1 both; animation-delay: 1s; display:block;}
+
+.slice-colors {height:100%;}
+
+.slice-colors .st {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 110px solid transparent;  
+}
+
+
+.four .slice-colors .st.slice-item:nth-child(2) {
+  border-top: 150px #f1c40f solid;
+  border-right: 150px #f1c40f solid;
+  background-color:#1eaa59;
+}
+
+.four .slice-colors .st.slice-item:nth-child(4) {
+  left:50%;
+  border-bottom: 150px #E84C3D solid;
+  border-right: 150px #E84C3D solid;
+  background-color:#e67e22;
+}
+
+
+@-webkit-keyframes fourspeed1 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(16deg);}
+}
+
+@-webkit-keyframes fourspeed2 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(65deg);}
+}
+
+@-webkit-keyframes fourspeed3 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(115deg);}
+}
+
+@-webkit-keyframes fourspeed4 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(164deg);}
+}

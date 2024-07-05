@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  margin: 0px;
+  font-family: 'inter',poppins;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:15%;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+.left-section{
+  flex: 1;
+  width: 100px;
+}
+.logo{
+  height: 90px;
+}
+a{
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black; 
+  font-size: 25px;
+  margin-left: 30px;
+}
+.currentPage{
+  color: rgba(255, 186, 63, 1);;
+}
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30px;
+  align-items: center;
+}
+a{
+  margin-left: 30px;
+  width: 200px;
+}
+.content{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContent{
+  padding: 15px 60px;
+  background-color: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column; /* Updated to row */
+  width: 60%;
+  justify-content: center;
+  align-items:flex-start;
+  text-align: left;
+}
+.head{
+  width: 100%;
+}
+h1{
+  color: rgba(239, 22, 22, 1);
+  display: block;
+  justify-content: center;
+  text-align: center;
+ }
+ .batchData{
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .batchData1{
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+ .label{
+  width: 260px;
+  font-size: 25px;
+}
+.input-box,
+.text-box{
+  width: 450px;
+  max-width: 100%;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+.options{
+  margin-left: 60px;
+  font-size: 18px;
+}
+.update-button{
+  background-color: rgb(255, 186, 63);
+  color: black;
+  height: 40px;
+  width: 90px;
+  border-radius: 25px;
+  border: none; 
+  margin-right: 180px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.update-button:hover{
+  background-color: rgb(247, 202, 0);
+}
+.update-button:active{
+  opacity: 0.5;
+}
+.button{
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}

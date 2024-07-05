@@ -1,0 +1,101 @@
+.mortality-analysis{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+    margin: 10px;
+    max-height: fit-content;
+    width: fit-content;
+  }
+  h1{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  h2{
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: center;
+  }
+  .chart1{
+    display: flex;
+    height: 300px;
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+  }
+  .count-analysis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    padding:5px 10px  ;
+    border-radius: 30px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+  }
+  .icons{
+    width: 25;
+  }
+  .dataCount{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    margin-left: 10px;
+    justify-content:center;
+    align-items: center;
+  }
+  .calButton{
+    padding: 0cqmin 5px;
+  }
+  .add{
+    margin-left: 30px;
+  }
+  .entereddata,
+  input{
+    border: none;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
+    padding: 2px 10px;
+    width: 150px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .editButton{
+    padding: 6px 10px;
+   margin-top: 15px;
+   border: none;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+   background-color: white;
+   margin-left: 100px;
+   border-radius: 20px;
+  }
+  
+  .analysisButton{
+    vertical-align: bottom;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F92626;
+    color: white;
+  }
+  .batch-data{
+    display: flex;
+    flex-direction: row;
+  }
+  .area-chart,
+  .batch-info{
+    justify-content:center;
+    align-items: center;
+    text-align:left;
+    padding: 20px 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+    margin: 10px;
+    width: fit-content;
+    width: fit-content;
+  }
